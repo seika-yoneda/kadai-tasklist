@@ -59,7 +59,7 @@ public class UpdateServlet extends HttpServlet {
                 request.setAttribute("message", m);
                 request.setAttribute("errors", errors);
 
-                RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/messages/new.jsp");
+                RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/messages/edit.jsp");
                 rd.forward(request, response);
             } else {
                 // データベースを更新
